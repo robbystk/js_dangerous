@@ -3,12 +3,11 @@
     <title>Learn Enough JavaScript to be Dangerous</title>
     <meta charset="utf-8">
     <script>
-      let firstName = "Robby";
-      let lastName = "Stokoe";
-      alert("hello, world!");
-      alert("Second alert");
-      console.log("This page contains a friendly greeting",
-        `and was written by ${firstName} ${lastName}.`);
+      const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
+        "Thursday", "Friday", "Saturday"];
+      let now = new Date();
+      let dayName = daysOfTheWeek[now.getDay()];
+      alert(`hello, world! Happy ${dayName}`);
     </script>
   </head>
   <body>
