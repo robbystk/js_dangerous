@@ -3,11 +3,14 @@
     <title>Learn Enough JavaScript to be Dangerous</title>
     <meta charset="utf-8">
     <script>
-      const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
-        "Thursday", "Friday", "Saturday"];
+      function dayName(date) {
+        const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
+                               "Thursday", "Friday", "Saturday"];
+        return daysOfTheWeek[date.getDay()];
+      }
+
       let now = new Date();
-      let dayName = daysOfTheWeek[now.getDay()];
-      alert(`hello, world! Happy ${dayName}`);
+      alert(`hello, world! Happy ${dayName(now)}`);
     </script>
   </head>
   <body>
