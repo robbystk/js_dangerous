@@ -5,3 +5,7 @@ function dayName(date) {
   return daysOfTheWeek[date.getDay()];
 }
 
+// Returns a greeting for the given date
+function greeting(date) {
+  return `hello, world! Happy ${dayName(date)}`;
+}
